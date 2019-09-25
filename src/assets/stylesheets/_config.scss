@@ -57,9 +57,12 @@ $break-devices: (
 // Variables: base colors
 // ----------------------------------------------------------------------------
 
+$md-color-rokubun-primary:            #3f5970;
+$md-color-rokubun-accent:             #f3a076;
+
 // Primary and accent colors
-$md-color-primary:                    $clr-indigo-500 !default;
-$md-color-accent:                     $clr-indigo-a200 !default;
+$md-color-primary:                    $md-color-rokubun-primary !default;
+$md-color-accent:                     $md-color-rokubun-accent !default;
 
 // Shades of black
 $md-color-black:                      hsla(0, 0%, 0%, 0.87) !default;

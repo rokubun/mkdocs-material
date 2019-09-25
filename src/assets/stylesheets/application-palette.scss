@@ -86,7 +86,8 @@ button[data-md-color-accent] {
   "deep-orange": $clr-deep-orange-400,
   "brown":       $clr-brown-500,
   "grey":        $clr-grey-600,
-  "blue-grey":   $clr-blue-grey-600
+  "blue-grey":   $clr-blue-grey-600,
+  "rokubun":     $md-color-rokubun-primary
 ) {
 
   // Color tile for presentation in theme documentation
@@ -98,9 +99,9 @@ button[data-md-color-accent] {
   [data-md-color-primary="#{$name}"] {
 
     // Links in typesetted content
-    .md-typeset a {
+    /*.md-typeset a {
       color: $color;
-    }
+    }*/
 
     // Application header (stays always on top)
     .md-header {
@@ -113,10 +114,10 @@ button[data-md-color-accent] {
     }
 
     // Current or active link
-    .md-nav__link:active,
+    /*.md-nav__link:active,
     .md-nav__link--active {
       color: $color;
-    }
+    }*/
 
     // Reset active color for nested list titles
     .md-nav__item--nested > .md-nav__link {
@@ -314,7 +315,8 @@ button[data-md-color-primary="black"] {
   "yellow":      $clr-yellow-a700,
   "amber":       $clr-amber-a700,
   "orange":      $clr-orange-a400,
-  "deep-orange": $clr-deep-orange-a200
+  "deep-orange": $clr-deep-orange-a200,
+  "rokubun":     $md-color-rokubun-accent
 ) {
 
   // Color tile for presentation in theme documentation
@@ -329,6 +331,7 @@ button[data-md-color-primary="black"] {
     .md-typeset {
 
       // Hovered and active links
+      a,
       a:hover,
       a:active {
         color: $color;
@@ -360,6 +363,11 @@ button[data-md-color-primary="black"] {
       }
     }
 
+    // Current or active link
+    .md-nav__link:active,
+    .md-nav__link--active {
+      color: $color;
+    }
     // Focused or hovered link
     .md-nav__link:focus,
     .md-nav__link:hover {
