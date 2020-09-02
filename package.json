@@ -1,7 +1,7 @@
 {
-  "name": "mkdocs-material",
+  "name": "mkdocs-rokubun",
   "version": "5.5.12",
-  "description": "A Material Design theme for MkDocs",
+  "description": "A fork of Material Design theme for MkDocs for Rokubun",
   "keywords": [
     "mkdocs",
     "documentation",
