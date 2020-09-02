@@ -1,7 +1,7 @@
 {
-  "name": "mkdocs-material",
+  "name": "mkdocs-rokubun",
   "version": "4.4.2",
-  "description": "A Material Design theme for MkDocs",
+  "description": "A fork of Material Design theme for MkDocs for Rokubun",
   "keywords": [
     "mkdocs",
     "documentation",
@@ -15,10 +15,10 @@
     "Topic :: Documentation",
     "Topic :: Text Processing :: Markup :: HTML"
   ],
-  "homepage": "https://squidfunk.github.io/mkdocs-material/",
+  "homepage": "https://github.com/rokubun/mkdocs-rokubun",
   "bugs": {
-    "url": "https://github.com/squidfunk/mkdocs-material/issues",
-    "email": "martin.donath@squidfunk.com"
+    "url": "https://github.com/rokubun/mkdocs-rokubun/issues",
+    "email": "alex.lopez@rokubun.cat"
   },
   "license": "MIT",
   "author": {
@@ -28,7 +28,7 @@
   "contributors": [],
   "repository": {
     "type": "git",
-    "url": "https://github.com/squidfunk/mkdocs-material.git"
+    "url": "https://github.com/rokubun/mkdocs-rokubun"
   },
   "scripts": {
     "build": "make clean build",

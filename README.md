@@ -17,6 +17,8 @@
 
 # Material for MkDocs
 
+**This is a fork of the amazing Mkdocs material theme for Rokubun**
+
 A Material Design theme for [MkDocs][1].
 
 [![Material for MkDocs](https://raw.githubusercontent.com/squidfunk/mkdocs-material/master/docs/assets/images/material.png)][2]
