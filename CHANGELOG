@@ -1,3 +1,267 @@
+mkdocs-material-5.5.12 (2020-08-31)
+
+  * Fixed #1638: occasional 404 for images when using instant loading
+
+mkdocs-material-5.5.11+insiders-1.4.0 (2020-08-30)
+
+  * Added support for auto-hiding header on scroll
+
+mkdocs-material-5.5.11 (2020-08-28)
+
+  * Fixed Disqus integration, as the minifier killed the config
+
+mkdocs-material-5.5.10 (2020-08-28)
+
+  * Improved rendering by moving Disqus integration after page load
+  * Fixed #1887: Moved navigation icons to CSS to reduce size of HTML
+
+mkdocs-material-5.5.9+insiders-1.3.0 (2020-08-26)
+
+  * Added support for user-selectable color palettes
+
+mkdocs-material-5.5.9 (2020-08-26)
+
+  * Added Esperanto translations
+  * Fixed #1884: External links not included in navigation tabs
+
+mkdocs-material-5.5.8 (2020-08-23)
+
+  * Removed focus outline on details and content tabs for pointer devices
+  * Improved accessibility of content tabs (now navigable via arrow keys)
+  * Fixed #1877: 404 on search index when search is disabled
+  * Fixed some memleaks in observable subscriptions
+  * Fixed color definitions for theme-color meta tag
+
+mkdocs-material-5.5.7 (2020-08-16)
+
+  * Improved contrast ratio to 4.5:1 for syntax highlighting
+  * Improved contrast ratio to 4.5:1 for table of contents
+
+mkdocs-material-5.5.6 (2020-08-12)
+
+  * Switched base template for 404.html to main.html
+  * Fixed #1864: GitHub organisation stats not loading
+
+mkdocs-material-5.5.5+insiders-1.2.0 (2020-08-11)
+
+  * Added feature to expand navigation by default
+
+mkdocs-material-5.5.5 (2020-08-11)
+
+  * Fixed missing vendor and worker distribution files
+
+mkdocs-material-5.5.4 (2020-08-11)
+
+  * Added support for sortable data tables
+
+mkdocs-material-5.5.3 (2020-08-04)
+
+  * Fixed search for languages other than English (5.5.1 regression)
+
+mkdocs-material-5.5.2+insiders-1.1.0 (2020-08-03)
+
+  * Added highlighting of search results
+
+mkdocs-material-5.5.2 (2020-08-03)
+
+  * Improved highlight colors and spacing for ins, del and mark
+  * Changed some keyboard symbols for better equivalents
+  * Removed focus outline for details and code blocks on touch devices
+  * Fixed margins for Admonitions (5.5.1 regression)
+  * Fixed too small content tab labels (5.5.1 regression)
+  * Fixed icon repeating for custom admonition icons
+
+mkdocs-material-5.5.1 (2020-08-01)
+
+  * Improved typesetting by basing font-size and spacings on em
+  * Improved print view by slightly scaling down font-size
+  * Changed custom site title (metadata) to be suffixed with site name
+  * Fixed top- and bottom spacing of paragraphs inside table cells
+
+mkdocs-material-5.5.0 (2020-07-24)
+
+  * Rewrite of entire documentation
+  * Rewrite of syntax highlighting to be customizable with CSS variables
+  * Improved syntax highlighting to work with light and dark theme
+  * Improved slate color scheme to be more customizable and easier on the eyes
+  * Added licenses of icon sets to distribution files
+  * Fixed stale document titles in Google Analytics when using instant loading
+  * Fixed width of previous and next footer links for tablet and above
+  * Fixed issues with top scroll margin for footnotes
+  * Fixed top margin for tabbed content when using a JavaScript highlighter
+  * Deprecated metadata-based redirects, source links and heroes
+
+mkdocs-material-5.4.0+insiders-1.0.0 (2020-07-14)
+
+  * Added grouping of search results
+  * Added missing query terms to search result
+  * Improved search result relevance and scoring
+
+mkdocs-material-5.4.0 (2020-06-29)
+
+  * Added support to wrap searches in quotes to switch from OR to AND
+  * Fixed highlighting of numbers in search results
+
+mkdocs-material-5.3.3 (2020-06-24)
+
+  * Added Bengali translations
+  * Fixed #1773: Search for numbers does not return any result (regression)
+
+mkdocs-material-5.3.2 (2020-06-21)
+
+  * Improved search typeahead experience with non-Latin characters
+  * Fixed #1753: Japanese search doesn't work anymore
+
+mkdocs-material-5.3.1 (2020-06-20)
+
+  * Fixed #1761: Duplication of search worker when subscribing to observable
+
+mkdocs-material-5.3.0 (2020-06-15)
+
+  * Added support for color schemes based on user preference
+  * Fixed #1755: Tokenizer separator setting ignored
+
+mkdocs-material-5.2.3 (2020-06-07)
+
+  * Improved search typeahead behavior for some languages (de, fr, ...)
+  * Improved styles for scrollbars on Firefox
+  * Fixed #1741: Removed preconnect hint for Google Analytics
+
+mkdocs-material-5.2.2 (2020-05-26)
+
+  * Fixed #1728: Legacy Edge doesn't support deg values in hsla colors
+
+mkdocs-material-5.2.1 (2020-05-22)
+
+  * Fixed color of links in table headers, e.g. footnotes
+  * Fixed color scheme not being applied without primary or accent color
+  * Fixed hover delay for links inside code blocks
+
+mkdocs-material-5.2.0 (2020-05-18)
+
+  * Added color schemes implementation + dark mode
+  * Fixed #1583: Missing option for separate link colors
+
+mkdocs-material-5.1.7 (2020-05-16)
+
+  * Added keyboard focus support for overflowing code blocks
+  * Fixed #1696: Infinite loop in some cases when using instant loading
+
+mkdocs-material-5.1.6 (2020-05-09)
+
+  * Added Burmese translations
+  * Added general anchor offset solution using scroll-margin-top
+  * Fixed #1653: Instant loading shouldn't intercept links to *.html files
+
+mkdocs-material-5.1.5 (2020-05-03)
+
+  * Added name attribute for social links to set link title
+  * Fixed #1623: Allow arbitrary links in social links
+  * Fixed #1664: Height of iframe is not adjustable
+  * Fixed #1667: Sidebars are scrolled to bottom on load (bug in Chrome 81+)
+
+mkdocs-material-5.1.4 (2020-04-30)
+
+  * Switched to @mdi/svg Material Design icon package
+  * Fixed #1655: Navigation may disappear after switching viewports
+  * Fixed #1659: Unnecessary scrollbar for search results on Windows
+  * Fixed occasional distortions for images with explicit dimensions
+  * Fixed errors in German translations
+
+mkdocs-material-5.1.3 (2020-04-26)
+
+  * Fixed overflowing content area after switch to flexbox
+
+mkdocs-material-5.1.2 (2020-04-26)
+
+  * Added status information to search observable
+  * Added status information to search modal
+  * Removed announcement bar from print media
+  * Removed media query packing logic due to race conditions
+  * Fixed #1520: Gracefully disable search on file:// if Worker fails
+  * Fixed re-submission of query after search is initialized
+  * Fixed jitter of sidebars on all browsers by switching to sticky
+
+mkdocs-material-5.1.1 (2020-04-17)
+
+  * Added new FontAwesome icons
+  * Fixed #1609: Instant loading doesn't honor target=_blank
+  * Fixed GitHub stars count rounding errors
+  * Fixed GitLab stars count retrieval
+
+mkdocs-material-5.1.0 (2020-04-12)
+
+  * Added support for icons from Markdown through mkdocs-material-extensions
+
+mkdocs-material-5.0.2 (2020-04-10)
+
+  * Added CSS source maps to distribution files
+  * Fixed errors in Chinese (Traditional) translations
+  * Fixed creation of stale directory on installation from git
+  * Improved overflow scrolling behavior on iOS (reduced bundle size by 4kb)
+
+mkdocs-material-5.0.1 (2020-04-07)
+
+  * Fixed syntax error in Spanish translations
+
+mkdocs-material-5.0.0 (2020-04-07)
+
+  * Reactive architecture – try app.dialog$.next("Hi!") in the console
+  * Instant loading – make Material behave like a Single Page Application
+  * Improved CSS customization with CSS variables – set your brand's colors
+  * Improved CSS resilience, e.g. proper sidebar locking for customized headers
+  * Improved icon integration and configuration – now including over 5k icons
+  * Added possibility to use any icon for logo, repository and social links
+  * Search UI does not freeze anymore (moved to web worker)
+  * Search index built only once when using instant loading
+  * Improved extensible keyboard handling
+  * Support for prebuilt search indexes
+  * Support for displaying stars and forks for GitLab repositories
+  * Support for scroll snapping of sidebars and search results
+  * Reduced HTML and CSS footprint due to deprecation of IE support
+  * Slight facelifting of some UI elements (Admonitions, tables, ...)
+
+mkdocs-material-4.6.3 (2020-02-14)
+
+  * Removed optional third-party plugins from requirements.txt
+  * Updated Docker image to contain all supported third-party plugins
+
+mkdocs-material-4.6.2 (2020-02-08)
+
+  * Added Romanian translations
+  * Fixed #1451: Inconsistent spacing for fenced code blocks
+
+mkdocs-material-4.6.1 (2020-02-08)
+
+  * Fixed #1324: Metadata author only rendering first character
+  * Fixed #1393: Set tabindex to 0 for skip to content link
+  * Fixed code blocks after Markdown 3.2 release
+  * Fixed errors in Japanese translations
+  * Improved Google Lighthouse score
+
+mkdocs-material-4.6.0 (2019-12-11)
+
+  * Added support for mkdocs-git-revision-date-localized-plugin
+  * Fixed invalid character in Google Fonts URL
+
+mkdocs-material-4.5.1 (2019-12-02)
+
+  * Added Thai translations
+  * Fixed missing assets in GitHub release .zip and .tar.gz
+
+mkdocs-material-4.5.0 (2019-11-16)
+
+  * Fixed #1330: Upgraded EmojiOne to Tweomji due to licensing issues
+  * Fixed #1339: Temporarily pinned PyMdown and Markdown due to
+  * Fixed errors in Greek translations
+  * Improved GitHub statistics retrieval
+
+mkdocs-material-4.4.3 (2019-10-03)
+
+  * Added Estonian translations
+  * Fixed removal of copyright banners in minified JavaScript
+  * Removed unnecessary title attributes from links in table of contents
+
 mkdocs-material-4.4.2 (2019-08-27)
 
   * Added Afrikaans translations
@@ -130,7 +394,7 @@ mkdocs-material-2.9.2 (2018-06-29)
 mkdocs-material-2.9.1 (2018-06-18)
 
   * Added support for different spellings for theme color
-  * Fixed #799: Added support for web font minification in production
+  * Fixed #799: Added support for webfont minification in production
   * Fixed #800: Added .highlighttable as an alias for .codehilitetable
 
 mkdocs-material-2.9.0 (2018-06-13)
@@ -499,7 +763,7 @@ mkdocs-material-1.5.2 (2017-04-05)
 
 mkdocs-material-1.5.1 (2017-03-30)
 
-  * Fixed rendering and offset of targetted footnotes
+  * Fixed rendering and offset of targeted footnotes
   * Fixed #238: Link on logo is not set to site_url
 
 mkdocs-material-1.5.0 (2017-03-24)
@@ -610,7 +874,7 @@ mkdocs-material-1.0.0 (2017-01-13)
   * Rewrite of the complete typographical system
   * Rewrite of Gulp asset pipeline in ES6 and separation of tasks
   * Removed Bower as a dependency in favor of NPM
-  * Removed custom icon build in favor of the Material Design iconset
+  * Removed custom icon build in favor of the Material Design icon set
   * Removed _blank targets on links due to vulnerability: http://bit.ly/1Mk2Rtw
   * Removed unversioned assets from build directory
   * Restructured templates into base templates and partials

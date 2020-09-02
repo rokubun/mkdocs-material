@@ -1,4 +1,4 @@
-# Copyright (c) 2016-2019 Martin Donath <martin.donath@squidfunk.com>
+# Copyright (c) 2016-2020 Martin Donath <martin.donath@squidfunk.com>
 
 # Permission is hereby granted, free of charge, to any person obtaining a copy
 # of this software and associated documentation files (the "Software"), to
@@ -18,7 +18,10 @@
 # FROM, OUT OF OR IN CONNECTION WITH THE SOFTWARE OR THE USE OR OTHER DEALINGS
 # IN THE SOFTWARE.
 
-FROM python:3.6.8-alpine3.9
+FROM python:3.8.1-alpine3.11
+
+# Build-time flags
+ARG WITH_PLUGINS=true
 
 # Set build directory
 WORKDIR /tmp
@@ -37,7 +40,17 @@ RUN \
     git \
     git-fast-import \
     openssh \
-  && python setup.py install \
+  && apk add --no-cache --virtual .build gcc musl-dev \
+  && pip install --no-cache-dir . \
+  && \
+    if [ "${WITH_PLUGINS}" = "true" ]; then \
+      pip install --no-cache-dir \
+        'mkdocs-awesome-pages-plugin>=2.2.1' \
+        'mkdocs-git-revision-date-localized-plugin>=0.4' \
+        'mkdocs-minify-plugin>=0.3' \
+        'mkdocs-redirects>=1.0'; \
+    fi \
+  && apk del .build gcc musl-dev \
   && rm -rf /tmp/*
 
 # Set working directory
